@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingEnd="@dimen/horizontal_padding"
+    android:paddingStart="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding">
+
+
+    <TextView
+        android:id="@+id/textTimeStamp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView11"
+        android:text="Time Stamp" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="119dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textTimeStamp"
+        android:text="Message data :"
+        tools:text="Message data :" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:textColor="@color/colorAccent"
+        android:layout_width="116dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:text="Sent By :"
+        tools:text="Sent By :" />
+
+
+    <TextView
+        android:id="@+id/textViewMessageContent"
+        android:layout_width="293dp"
+        android:layout_height="243dp"
+        android:layout_alignEnd="@+id/textAuther"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textView12"
+        android:text="Message data" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/textAuther"
+        android:text="Recieved msg :"
+        tools:text="Sent msg:" />
+
+    <TextView
+        android:id="@+id/textAuther"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView10"
+        android:text="author name" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Delete message" />
+
+</RelativeLayout>
